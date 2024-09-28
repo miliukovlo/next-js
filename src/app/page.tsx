@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useState } from 'react';
-import Input from './Components/Common/Input/Input';
+import Input from '@/Components/Common/Input/Input';
 import styles from "./page.module.css"
-import Button from './Components/Common/Button/Button';
+import Button from '@/Components/Common/Button/Button';
 import { useRouter } from 'next/navigation';
 
 const Page : React.FC = () => {

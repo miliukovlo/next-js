@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation';
-import Button from './Components/Common/Button/Button';
+import Button from '@/Components/Common/Button/Button';
 
 const NotFound = () => {
     const {push} = useRouter()
