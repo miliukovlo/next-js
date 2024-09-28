@@ -1,6 +1,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --secondary-black: #161616;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.error__text {
+  font-size: 2vh;
+  color: darkred;
+  transition-duration: 0.4s;
+}
+
+.error__text_hidden {
+  color: transparent !important;
 }
 
 * {

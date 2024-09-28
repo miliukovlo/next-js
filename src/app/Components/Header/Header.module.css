@@ -1,0 +1,11 @@
+.header {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--secondary-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__text {
+    font-size: 3vh;
+}

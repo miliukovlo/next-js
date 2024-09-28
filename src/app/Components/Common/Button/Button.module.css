@@ -1,0 +1,25 @@
+.button__m {
+    height: 10%;
+    min-height: 30px;
+    width: 40%;
+    text-indent: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--background);
+    cursor: pointer;
+    margin: 30px;
+    transition-duration: 0.4s;
+}
+.button__l {
+    height: 15%;
+    margin: 30px;
+    min-height: 40px;
+    width: 50%;
+    text-indent: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--background);
+    transition-duration: 0.4s;
+}
+.button__m:hover, .button__l:hover {
+    background-color: var(--foreground);
+    color: var(--secondary-black);
+}
