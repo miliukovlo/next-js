@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './page.module.css'
 
 
-const NotFound = () => {
+const Loading = () => {
     return (
         <>
         <main className={styles.main}>
@@ -12,4 +12,4 @@ const NotFound = () => {
     );
 }
 
-export default NotFound;
+export default Loading;

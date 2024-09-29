@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Input from '@/Components/Common/Input/Input';
 import styles from "./page.module.css"
 import Button from '@/Components/Common/Button/Button';
@@ -10,9 +10,23 @@ const Page : React.FC = () => {
 
   const {replace} = useRouter()
 
+  useEffect(() => {
+    let isLogin : string | null = null;
+    try {
+        isLogin = localStorage.getItem("isLogin")
+    } catch (e) {
+        console.error(e)
+    }
+
+    if (isLogin) {
+        replace('/menu')
+    }
+  },[])
+
   const [login, setLogin] = useState<string>("")
   const [password, setPassword] = useState<string>("")
   const [error, setError] = useState<boolean>(false)
+
 
 
   const handleLoginChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,9 +37,10 @@ const Page : React.FC = () => {
     setPassword(e.target.value)
   }
 
+  
   const handleLogin : () => void = () => {
     if (login.trim().length !== 0 && password.trim().length !== 0) {
-      localStorage.setItem('isLogin', "true")
+      localStorage.setItem("isLogin", "true")
       localStorage.setItem("userName", login)
       setError(false)
       setLogin("")
