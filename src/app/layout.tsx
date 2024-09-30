@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/Components/Header/Header";
@@ -20,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header/>
-          <Suspense fallback={<Loading/>}>
-            {children}
-          </Suspense>
-        <Footer/>
+          <Header/>
+              <Suspense fallback={<Loading/>}>
+                {children}
+              </Suspense>
+            <Footer/>
       </body>
     </html>
   );
