@@ -3,9 +3,21 @@
     width: 100%;
     background-color: var(--secondary-black);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .header__text {
     font-size: 3vh;
+    margin: 20px;
+}
+.button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 20px;
+    background-color: transparent;
+    border: 0;
 }

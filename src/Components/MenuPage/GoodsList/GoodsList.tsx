@@ -47,6 +47,7 @@ const GoodsList = () => {
                     image={card.image}
                     key={card.id}
                     rate={card.rating.rate}
+                    id={card.id}
                     price={card.price}
                     />
                 )
